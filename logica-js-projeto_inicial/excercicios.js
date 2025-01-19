@@ -17,3 +17,4 @@ let idadeUsuario = prompt('Qual sua idade: ')
 if (idadeUsuario >= 18){
     alert('pode tirar a carteira de motorista')
 }
+//alteração 
