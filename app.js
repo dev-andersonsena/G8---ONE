@@ -10,7 +10,7 @@ while (chute!=NumeroSecreto){
     chute = prompt('Esolha o número entre 1 a 10: ');
 
     if (chute == NumeroSecreto) {
-        console.log (`Isso ai, voçê descobriu o número secret ${NumeroSecreto} com tentativas = ${tentativas}`)
+        break;
     } else {
         if (chute > NumeroSecreto) {
             alert (`o número secreto é menor que o ${chute}`);
@@ -20,5 +20,12 @@ while (chute!=NumeroSecreto){
         }
         tentativas++;
     }
+
+}
+
+if (tentativas > 1) {
+    alert (`Isso ai, voçê descobriu o número secret que é ${NumeroSecreto} com ${tentativas} tentativas `)
+} else {
+    alert (`Isso ai, voçê descobriu o número secret que é ${NumeroSecreto} com ${tentativas}  com tentativa `)
 
 }
