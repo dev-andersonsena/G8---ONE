@@ -1,13 +1,13 @@
 alert ('boas vinda ao site')
-
-let NumeroSecreto = 5;
+let numeroMaximo = 5000;
+let NumeroSecreto = parseInt(Math.random() * numeroMaximo + 1);
 console.log(NumeroSecreto);
 let chute;
 let tentativas = 1;
 
 // quando o chute não for igual ao número secreto
 while (chute!=NumeroSecreto){
-    chute = prompt('Esolha o número entre 1 a 10: ');
+    chute = prompt(`Esolha o número entre 1 a ${numeroMaximo}: `);
 
     if (chute == NumeroSecreto) {
         break;
@@ -25,7 +25,7 @@ while (chute!=NumeroSecreto){
 
 
 let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
-alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}.`);
+alert(`Isso ai! Você descobriu o número secreto ${NumeroSecreto} com ${tentativas} ${palavraTentativa}.`);
 
 
 //if (tentativas > 1) {
