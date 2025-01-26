@@ -23,9 +23,14 @@ while (chute!=NumeroSecreto){
 
 }
 
-if (tentativas > 1) {
-    alert (`Isso ai, voçê descobriu o número secret que é ${NumeroSecreto} com ${tentativas} tentativas `)
-} else {
-    alert (`Isso ai, voçê descobriu o número secret que é ${NumeroSecreto} com ${tentativas}  com tentativa `)
 
-}
+let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
+alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}.`);
+
+
+//if (tentativas > 1) {
+    //alert (`Isso ai, voçê descobriu o número secret que é ${NumeroSecreto} com ${tentativas} tentativas `)
+//} else {
+ //   alert (`Isso ai, voçê descobriu o número secret que é ${NumeroSecreto} com ${tentativas}  com tentativas `)
+
+///}
